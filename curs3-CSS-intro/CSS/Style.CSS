@@ -1,0 +1,86 @@
+p {
+  color:green;
+}
+#navbar {
+  background-color: yellow;
+}
+.Box {
+  
+  border: solid 1px pink;
+}
+.red,span{
+  color:red;
+}
+#containe{
+  background-color: yellow;
+}
+a {
+  color:purple;
+}
+* {
+  color:pink;
+}
+div p a span{
+  font-style:italic;
+  font-weight:bold;
+}
+div p a{
+  color:blue;
+}
+div > a{
+  color:green;
+}
+  div + p span{
+    pink;
+  }
+[id]{
+  border:5px solid grey;
+}
+[id="first"]{
+  color:yellow;
+}
+[id="second"]{
+  color:purple;
+}
+
+[type="text"]{
+  border:2px solid green;
+}
+
+
+a:active{
+  color:blue;
+  
+}
+a:link{
+  color:purple;
+}
+a:visited{
+  color:darkgray;
+}
+
+a:hover{
+  color:green; 
+  font-weight:bold;
+}
+a::after{
+  content:'8 martie';
+  display:block;
+}
+body {
+  margin:0; /*gets rid of white space around body*/
+  margin-top:16px;
+  height:150vh; /*you can let your content define it's height*/
+  position:relative;
+}
+.footer{
+  position: absolute;
+  height:50px;
+  width:100%;
+  color:blue;
+  bottom:0;
+  left:0;
+  background-color:black;
+  text-align:center;
+  font-size:50px;
+}
