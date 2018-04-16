@@ -1,43 +1,34 @@
-window.addEventListener("load",OnHtmlLoaded);
- 
-function OnHtmlLoaded(){
-
-var arr =  [1,2,3,['a','b','c']];
-console.log(arr[3]);
+window.onload = onHtmlLoaded;
+function onHtmlLoaded(){
+  //safe DOM manipulation
+  var nameElement=document.querySelector("input[name='name']");
   
-var robot = {
+  var contentElement=document.querySelector("[name='content']");//preia elementul de HTML
   
-  model: "Trx90",
-  speed: 20,
-  color: "Blue",
-  attack: function test (){
-    console.log("attack");
-  }
   
-}  
-  console.log(robot.speed);
+  var form=document.querySelector("form");
+  form.addEventListener("submit",function(event){
+    event.preventDefault();
+    addComment(nameElement.value, contentElement.value);// apeleaza valoarea din elementele de HTML
   
-  function test () {
-    console.log("test");
-  }
-  test();
-
-//var string= "this is my cat"
-
-function NewSentence(string){
-  return string + " name"
+});
 }
-//console.log(string);  
-//console.log(  NewSentence(string));
+
+function addComment(name, content){
+  console.log(name, content);
   
-  function makeMoreExciting(string){
-    return string + "!!!!"
-    makeMoreExciting(string)
-    console.log(makeMoreExciting(string));
-  }
-  function yellIt(string) {
-  string = string.toUpperCase()
-  string = makeMoreExciting(string)
-  console.log(string);
+    if (document.contentElement === "") {
+            document.getElementByTagName("textarea").style.border="2px solid red";
+  
+  
+    }
+  var button = document.getElementById("btn-submit");
+  
+  
+  //add listener on button
+  button.addEventListener("click", function(event){
+   document.getElementByTagName("textarea").style.border="2px solid red";
+    });
+  
+  
 }
-  }
